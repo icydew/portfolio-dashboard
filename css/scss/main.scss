@@ -1,0 +1,75 @@
+body {
+  font: 14px 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto Slab', serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.full-section {
+  padding: 40px;
+}
+
+.avatar {
+  border-radius: 70px;
+  max-height: 70px;
+}
+
+.button {
+  padding: 3px 6px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: #ffffff;
+  font-weight: 600;
+  text-align: center;
+  margin-right: 30px;
+}
+
+.button_circle {
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+
+}
+
+@import "base/config";
+@import "components/top";
+@import "components/content";
+
+//
+//$space: 8px;
+//
+//.lul {
+//  background: red;
+//  margin: $space * 4;
+//  padding: $space;
+//}
+//
+//.lul-pro {
+//  @extend .lul;
+//  color: yellow;
+//}
+
+
+

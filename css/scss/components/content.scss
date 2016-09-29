@@ -1,0 +1,386 @@
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+
+  .nav-left {
+    flex-direction: column;
+    display: flex;
+    flex-shrink: 0;
+    width: 140px;
+    justify-content: space-between;
+    background: #f0f0f0;
+    padding-bottom: 50px;
+
+    a {
+      text-decoration: none;
+      color: $main-text-color;
+      text-align: center;
+      margin: 20px;
+
+      svg {
+        width: 40px;
+        height: 40px;
+        fill: $left-svg;
+      }
+    }
+
+    .main-menu {
+      flex-direction: column;
+      display: flex;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+
+    .out {
+      margin: 0 auto;
+      text-align: center;
+      a {
+        margin: 0;
+        p {
+          color: $btn-delete;
+        }
+        svg {
+          fill: $btn-delete;
+        }
+      }
+    }
+  }
+
+  .main-content {
+    flex-grow: 1;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 130px;
+    color: $center-text-color;
+
+    > div {
+      padding-bottom: 20px;
+    }
+    .name-panel {
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+    .name-system {
+      h2 {
+        font-size: 2.9rem;
+        color: $black;
+      }
+    }
+    .info-dashboard {
+      display: flex;
+      flex-direction: row;
+      font-size: 0.9rem;
+      > div {
+        display: flex;
+        flex-direction: row;
+        padding-right: 30px;
+        align-items: center;
+        #data-dashboard {
+          margin-left: 5px;
+          font-weight: bold;
+        }
+        svg {
+          fill: $left-svg;
+          width: 20px;
+          height: 20px;
+
+        }
+        p {
+          margin-left: 10px;
+        }
+      }
+      .recommend {
+        color: $black;
+      }
+    }
+    .tab {
+      border-bottom: 1px solid $center-text-color;
+      padding-top: 50px;
+      padding-bottom: 20px;
+      a {
+        text-decoration: none;
+        color: $main-text-color;
+        text-transform: uppercase;
+        font-size: 1rem;
+        margin-right: 40px;
+      }
+      .active {
+        color: $black;
+        border-bottom: 3px solid $brand-color;
+        padding-bottom: 18px;
+      }
+    }
+    .btn {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 40px 0px;
+      .buttons {
+        display: flex;
+        flex-direction: row;
+
+        .button-open {
+          @extend .button;
+          text-transform: none;
+          font-weight: normal;
+          color: $black;
+          background: $btn-open;
+        }
+        .button-add {
+          @extend .button;
+          background: $btn-add;
+        }
+        .button-delete {
+          @extend .button;
+          background: $btn-delete;
+        }
+      }
+      .search {
+        width: 200px;
+        border-bottom: 1px solid $main-text-color;
+
+        a {
+          color: $main-text-color;
+          text-decoration: none;
+          font-style: italic;
+        }
+      }
+    }
+    .table table {
+      width: 100%;
+      text-transform: uppercase;
+      color: $black;
+      a {
+        text-decoration: none;
+      }
+
+      /* Base for label styling */
+      [type="checkbox"]:not(:checked),
+      [type="checkbox"]:checked {
+        position: absolute;
+        left: -9999px;
+      }
+      [type="checkbox"]:not(:checked) + label,
+      [type="checkbox"]:checked + label {
+        position: relative;
+        padding-left: 25px;
+        cursor: pointer;
+      }
+      /* checkbox aspect */
+      [type="checkbox"]:not(:checked) + label:before,
+      [type="checkbox"]:checked + label:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 2px;
+        width: 17px;
+        height: 17px;
+        border: 2px solid $main-text-color;
+        background: #f8f8f8;
+      }
+      /* checked mark aspect */
+      [type="checkbox"]:not(:checked) + label:after,
+      [type="checkbox"]:checked + label:after {
+        content: '\2228';
+        position: absolute;
+        top: 2px;
+        left: 1px;
+        font-size: 18px;
+        line-height: 0.8;
+        color: $main-text-color;
+        transition: all .2s;
+      }
+      /* checked mark aspect changes */
+      [type="checkbox"]:not(:checked) + label:after {
+        opacity: 0;
+        transform: scale(0);
+      }
+      [type="checkbox"]:checked + label:after {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      td {
+        border-bottom: 1px solid $main-text-color;
+        padding: 15px 0;
+        span {
+          color: $brand-color;
+          font-weight: 600;
+        }
+        svg {
+          width: 18px;
+          height: 18px;
+          fill: $main-text-color;
+          margin-left: 10px;
+        }
+        .block-tr {
+          fill: $btn-delete;
+        }
+      }
+      .title {
+        color: $main-text-color;
+        td {
+          padding-bottom: 35px;
+          font-weight: 600;
+          svg {
+            width: 10px;
+            height: 10px;
+            fill: $main-text-color;
+          }
+        }
+      }
+    }
+    .after-table {
+      display: flex;
+      flex-direction: row;
+      border-bottom: 1px solid $btn-edit;
+
+      div {
+        padding-right: 35px;
+        a {
+          max-height: 20px;
+          text-decoration: none;
+          color: $main-text-color;
+          svg {
+            width: 20px;
+            height: 20px;
+            fill: $center-text-color;
+            margin-right: 10px;
+          }
+          .button-edit {
+            margin-right: 0;
+            @extend .button;
+            background: $btn-edit;
+          }
+          .button-delete {
+            margin-right: 0;
+            @extend .button;
+            background: $btn-delete;
+          }
+        }
+
+      }
+    }
+    .pages {
+      margin: 90px auto 0;
+      border: 2px solid $brand-color;
+      border-radius: 30px;
+      padding: 8px;
+      a {
+        text-decoration: none;
+        font-size: 1.2em;
+        color: $main-text-color;
+        padding: 0 10px;
+        text-align: center;
+        vertical-align: middle;
+        span {
+          color: $brand-color;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .nav-right {
+    width: 450px;
+    flex-shrink: 0;
+    background: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 90px;
+    color: $black;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    > div {
+      padding-bottom: 20px;
+    }
+    h5 {
+      text-transform: uppercase;
+      font-weight: 300;
+      color: $center-text-color;
+    }
+
+    span {
+      color: $brand-color;
+      font-size: 3.0rem;
+      font-weight: bold;
+      font-family: 'Roboto Slab', serif;
+    }
+
+    .inventorys {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .items {
+      padding-bottom: 40px;
+      border-bottom: 1px solid $center-text-color;
+    }
+    .stats {
+      padding-top: 20px;
+      > div {
+        padding-top: 20px;
+      }
+      .line {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .value {
+          color: $brand-color;
+          font-size: 1rem;
+          font-weight: bold;
+        }
+      }
+    }
+    .show {
+
+      .button-show {
+        @extend .button;
+        color: #ffffff;
+        background: $btn-show;
+
+      }
+    }
+    .team {
+      display: flex;
+      flex-direction: column;
+      padding-top: 80px;
+
+      .friends {
+        display: flex;
+        flex-direction: row;
+        padding-top: 30px;
+        align-items: center;
+        p {
+          padding-left: 20px;
+        }
+        .post {
+          color: $brand-color;
+          font-weight: normal;
+          font-size: 0.8rem;
+        }
+      }
+      .new-team {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: $brand-color;
+
+        .button_circle {
+          background: $brand-color;
+          margin-right: 20px;
+          svg {
+            width: 20px;
+            height: 20px;
+            margin: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
