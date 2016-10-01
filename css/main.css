@@ -120,6 +120,7 @@ h6 {
 @media (max-width: 480px) {
   .nav-left .main-menu {
     flex-direction: row; } }
+
 .content {
   display: flex;
   flex-direction: row;
@@ -385,5 +386,3 @@ h6 {
       order: 1; }
     .content .nav-right {
       order: 3; } }
-
-/*# sourceMappingURL=main.css.map */

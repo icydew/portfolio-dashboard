@@ -1,0 +1,23 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "node-sass ./css/scss/main.scss ./css/main.css",
+    "build:css:w": "node-sass ./css/scss/main.scss ./css/main.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icydew/portfolio-dashboard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/icydew/portfolio-dashboard/issues"
+  },
+  "homepage": "https://github.com/icydew/portfolio-dashboard#readme",
+  "dependencies": {
+    "node-sass": "^3.10.1"
+  }
+}
