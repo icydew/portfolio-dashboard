@@ -87,41 +87,46 @@ h6 {
       .header .nav-top .profile svg {
         fill: #ffffff; }
 
+.nav-left {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  background: #f0f0f0;
+  padding-bottom: 50px; }
+  .nav-left a {
+    text-decoration: none;
+    color: #ADADAD;
+    text-align: center;
+    margin: 20px; }
+    .nav-left a svg {
+      width: 40px;
+      height: 40px;
+      fill: #adadad; }
+  .nav-left .main-menu {
+    flex-direction: column;
+    display: flex;
+    font-size: 1rem;
+    flex-shrink: 0; }
+  .nav-left .out {
+    margin: 0 auto;
+    text-align: center; }
+    .nav-left .out a {
+      margin: 0; }
+      .nav-left .out a p {
+        color: #E66A5D; }
+      .nav-left .out a svg {
+        fill: #E66A5D; }
+
+@media (max-width: 480px) {
+  .nav-left .main-menu {
+    flex-direction: row; } }
 .content {
   display: flex;
   flex-direction: row;
   flex-grow: 1; }
   .content .nav-left {
-    flex-direction: column;
-    display: flex;
     flex-shrink: 0;
-    width: 140px;
-    justify-content: space-between;
-    background: #f0f0f0;
-    padding-bottom: 50px; }
-    .content .nav-left a {
-      text-decoration: none;
-      color: #ADADAD;
-      text-align: center;
-      margin: 20px; }
-      .content .nav-left a svg {
-        width: 40px;
-        height: 40px;
-        fill: #adadad; }
-    .content .nav-left .main-menu {
-      flex-direction: column;
-      display: flex;
-      font-size: 1rem;
-      flex-shrink: 0; }
-    .content .nav-left .out {
-      margin: 0 auto;
-      text-align: center; }
-      .content .nav-left .out a {
-        margin: 0; }
-        .content .nav-left .out a p {
-          color: #E66A5D; }
-        .content .nav-left .out a svg {
-          fill: #E66A5D; }
+    width: 140px; }
   .content .main-content {
     flex-grow: 1;
     background: #ffffff;
@@ -369,5 +374,16 @@ h6 {
             width: 20px;
             height: 20px;
             margin: 15px; }
+
+@media (max-width: 480px) {
+  .content {
+    flex-direction: column; }
+    .content .nav-left {
+      order: 2;
+      width: auto; }
+    .content .main-content {
+      order: 1; }
+    .content .nav-right {
+      order: 3; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,50 +1,13 @@
+@import "nav-left";
+
 .content {
   display: flex;
   flex-direction: row;
   flex-grow: 1;
 
   .nav-left {
-    flex-direction: column;
-    display: flex;
     flex-shrink: 0;
     width: 140px;
-    justify-content: space-between;
-    background: #f0f0f0;
-    padding-bottom: 50px;
-
-    a {
-      text-decoration: none;
-      color: $main-text-color;
-      text-align: center;
-      margin: 20px;
-
-      svg {
-        width: 40px;
-        height: 40px;
-        fill: $left-svg;
-      }
-    }
-
-    .main-menu {
-      flex-direction: column;
-      display: flex;
-      font-size: 1rem;
-      flex-shrink: 0;
-    }
-
-    .out {
-      margin: 0 auto;
-      text-align: center;
-      a {
-        margin: 0;
-        p {
-          color: $btn-delete;
-        }
-        svg {
-          fill: $btn-delete;
-        }
-      }
-    }
   }
 
   .main-content {
@@ -384,3 +347,22 @@
   }
 }
 
+@media (max-width: $tabletWidth) {
+  
+}
+
+@media (max-width: $mobileWidth) {
+  .content {
+    flex-direction: column;
+    .nav-left {
+      order: 2;
+      width: auto;
+    }
+    .main-content {
+      order: 1;
+    }
+    .nav-right {
+      order: 3;
+    }
+  }
+}
