@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build:css": "node-sass ./css/scss/main.scss ./css/main.css",
-    "build:css:w": "node-sass ./css/scss/main.scss ./css/main.css -w"
+    "build:css:w": "node-sass ./css/scss/main.scss ./css/main.css -w ./css"
   },
   "repository": {
     "type": "git",

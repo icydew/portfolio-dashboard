@@ -1,0 +1,370 @@
+.main-content {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 130px;
+  color: $center-text-color;
+
+  > div {
+    padding-bottom: 20px;
+  }
+  .name-panel {
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+  .name-system {
+    h2 {
+      font-size: 2.9rem;
+      color: $black;
+    }
+  }
+  .info-dashboard {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.9rem;
+    > div {
+      display: flex;
+      flex-direction: row;
+      padding-right: 30px;
+      align-items: center;
+      #data-dashboard {
+        margin-left: 5px;
+        font-weight: bold;
+      }
+      svg {
+        fill: $left-svg;
+        width: 20px;
+        height: 20px;
+
+      }
+      p {
+        margin-left: 10px;
+      }
+    }
+    .recommend {
+      color: $black;
+    }
+  }
+  .tab {
+    border-bottom: 1px solid $center-text-color;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    a {
+      text-decoration: none;
+      color: $main-text-color;
+      text-transform: uppercase;
+      font-size: 1rem;
+      margin-right: 40px;
+    }
+    .active {
+      color: $black;
+      border-bottom: 3px solid $brand-color;
+      padding-bottom: 18px;
+    }
+  }
+  .btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 0px;
+    .buttons {
+      display: flex;
+      flex-direction: row;
+
+      .button-open {
+        @extend .button;
+        text-transform: none;
+        font-weight: normal;
+        color: $black;
+        background: $btn-open;
+      }
+      .button-add {
+        @extend .button;
+        background: $btn-add;
+      }
+      .button-delete {
+        @extend .button;
+        background: $btn-delete;
+      }
+    }
+    .search {
+      width: 200px;
+      border-bottom: 1px solid $main-text-color;
+
+      a {
+        color: $main-text-color;
+        text-decoration: none;
+        font-style: italic;
+      }
+    }
+  }
+  .table table {
+    width: 100%;
+    text-transform: uppercase;
+    color: $black;
+    a {
+      text-decoration: none;
+    }
+
+    /* Base for label styling */
+    [type="checkbox"]:not(:checked),
+    [type="checkbox"]:checked {
+      position: absolute;
+      left: -9999px;
+    }
+    [type="checkbox"]:not(:checked) + label,
+    [type="checkbox"]:checked + label {
+      position: relative;
+      padding-left: 25px;
+      cursor: pointer;
+    }
+    /* checkbox aspect */
+    [type="checkbox"]:not(:checked) + label:before,
+    [type="checkbox"]:checked + label:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 2px;
+      width: 17px;
+      height: 17px;
+      border: 2px solid $main-text-color;
+      background: #f8f8f8;
+    }
+    /* checked mark aspect */
+    [type="checkbox"]:not(:checked) + label:after,
+    [type="checkbox"]:checked + label:after {
+      content: '\2228';
+      position: absolute;
+      top: 2px;
+      left: 1px;
+      font-size: 18px;
+      line-height: 0.8;
+      color: $main-text-color;
+      transition: all .2s;
+    }
+    /* checked mark aspect changes */
+    [type="checkbox"]:not(:checked) + label:after {
+      opacity: 0;
+      transform: scale(0);
+    }
+    [type="checkbox"]:checked + label:after {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    td {
+      border-bottom: 1px solid $main-text-color;
+      padding: 15px 0;
+      span {
+        color: $brand-color;
+        font-weight: 600;
+      }
+      svg {
+        width: 18px;
+        height: 18px;
+        fill: $main-text-color;
+        margin-left: 10px;
+      }
+      .block-tr {
+        fill: $btn-delete;
+      }
+    }
+    .title {
+      color: $main-text-color;
+      td {
+        padding-bottom: 35px;
+        font-weight: 600;
+        svg {
+          width: 10px;
+          height: 10px;
+          fill: $main-text-color;
+        }
+      }
+    }
+  }
+  .after-table {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid $btn-edit;
+
+    div {
+      padding-right: 35px;
+      a {
+        max-height: 20px;
+        text-decoration: none;
+        color: $main-text-color;
+        svg {
+          width: 20px;
+          height: 20px;
+          fill: $center-text-color;
+          margin-right: 10px;
+        }
+        .button-edit {
+          margin-right: 0;
+          @extend .button;
+          background: $btn-edit;
+        }
+        .button-delete {
+          margin-right: 0;
+          @extend .button;
+          background: $btn-delete;
+        }
+      }
+
+    }
+  }
+  .pages {
+    margin: 90px auto 0;
+    border: 2px solid $brand-color;
+    border-radius: 30px;
+    padding: 8px;
+    a {
+      text-decoration: none;
+      font-size: 1.2em;
+      color: $main-text-color;
+      padding: 0 10px;
+      text-align: center;
+      vertical-align: middle;
+      span {
+        color: $brand-color;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+@media (max-width: $tabletWidth)  {
+ .main-content{
+   padding: 20px 25px 50px 25px;
+   .button{
+     font-size: 0.8rem;
+     padding: 5px;
+   }
+   .pages{
+     margin-top: 40px;
+   }
+ }
+}
+
+@media (max-width: $mobileWidth) {
+  .main-content {
+    width: 100%;
+    padding: 0;
+    margin: 20px;
+    > div {
+      padding-bottom: 5px;
+    }
+    .name-panel {
+      display: none;
+    }
+    .name-system {
+      h2 {
+        font-size: 1.2rem;
+      }
+    }
+    .info-dashboard {
+      flex-wrap: wrap;
+      font-size: 0.7rem;
+      > div {
+        margin-bottom: 10px;
+        #data-dashboard {
+          margin-left: 5px;
+        }
+        svg {
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+    .tab {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      a {
+        font-size: 0.8rem;
+        margin-right: 40px;
+      }
+      .active {
+        padding-bottom: 10px;
+      }
+    }
+    .btn {
+      flex-direction: row;
+      padding: 20px 0;
+      flex-wrap: wrap;
+      .buttons {
+        order: 2;
+        font-size: 0.55rem;
+        flex-wrap: wrap;
+        .button-open {
+          margin-right: 15px;
+          margin-bottom: 10px;
+
+        }
+        .button-add {
+          margin-right: 15px;
+          margin-bottom: 10px;
+
+        }
+        .button-delete{
+          margin-right: 0;
+        }
+      }
+      .search {
+        display: none;
+      }
+    }
+    .table table {
+      width: 100%;
+      font-size: 0.6rem;
+      td {
+        padding: 5px 0;
+        span {
+          font-weight: 600;
+        }
+        svg {
+          width: 10px;
+          height: 10px;
+          margin-left: 5px;
+        }
+      }
+      td:nth-child(3) {
+        display: none;
+      }
+      td:nth-child(1) {
+        display: none;
+      }
+      td:nth-child(6) {
+        display: none;
+      }
+      .title {
+        font-size: 0.55rem;
+        td {
+          padding-bottom: 5px;
+          font-weight: 600;
+          svg {
+           display: none;
+          }
+        }
+        td:nth-child(3) {
+          display: none;
+        }
+
+        td:nth-child(6) {
+          display: none;
+        }
+      }
+    }
+    .after-table {
+      display: none;
+    }
+    .pages {
+      margin: 10px auto 0;
+      padding: 5px;
+      a {
+        font-size: 0.9em;
+        padding: 0 5px;
+        line-height: 20px;
+      }
+    }
+  }
+}
