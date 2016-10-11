@@ -1,5 +1,5 @@
-## Build SCSS -> CSS
+## Run build css & run lite-server
 
 ```
-npm run build:css:w
+npm run build
 ```
