@@ -1,23 +1,18 @@
-@import "nav-left";
-@import "main-content";
-@import "nav-right";
-
 .content {
   display: flex;
   flex-direction: row;
   flex-grow: 1;
 
-  .nav-left {
+  .section-menu {
     flex-shrink: 0;
     width: 140px;
   }
 
-  .main-content {
+  .section-content {
     flex-grow: 1;
-
   }
 
-  .nav-right {
+  .section-statistics {
     width: 450px;
     flex-shrink: 0;
   }
@@ -27,18 +22,18 @@
   .full-section {
     padding: 20px;
   }
+
   .content {
     flex-direction: column;
-    .nav-left {
+    .section-menu {
       order: 1;
       width: auto;
     }
-    .main-content {
+    .section-content {
       order: 2;
       width: auto;
-
     }
-    .nav-right {
+    .section-statistics {
       order: 3;
       width: auto;
     }
@@ -49,18 +44,18 @@
   .full-section {
     padding: 20px;
   }
-  .content {
+
+  .section-menu {
     flex-direction: column;
     .nav-left {
       order: 1;
       width: auto;
     }
-    .main-content {
+    .section-content {
       order: 2;
       width: auto;
-
     }
-    .nav-right {
+    .section-statistics {
       order: 3;
       width: auto;
     }

@@ -1,4 +1,4 @@
-.main-content {
+.section-content {
   background: #ffffff;
   display: flex;
   flex-direction: column;
@@ -8,16 +8,19 @@
   > div {
     padding-bottom: 20px;
   }
+
   .name-panel {
     text-transform: uppercase;
     font-weight: 300;
   }
+
   .name-system {
     h2 {
       font-size: 2.9rem;
       color: $black;
     }
   }
+
   .info-dashboard {
     display: flex;
     flex-direction: row;
@@ -51,6 +54,7 @@
       }
     }
   }
+
   .tab {
     border-bottom: 1px solid $center-text-color;
     padding-top: 50px;
@@ -68,6 +72,7 @@
       padding-bottom: 18px;
     }
   }
+
   .btn {
     display: flex;
     flex-direction: row;
@@ -76,7 +81,6 @@
     .buttons {
       display: flex;
       flex-direction: row;
-
       .button-open {
         @extend .button;
         text-transform: none;
@@ -96,7 +100,6 @@
     .search {
       width: 200px;
       border-bottom: 1px solid $main-text-color;
-
       a {
         color: $main-text-color;
         text-decoration: none;
@@ -104,6 +107,7 @@
       }
     }
   }
+
   .table table {
     width: 100%;
     text-transform: uppercase;
@@ -111,7 +115,6 @@
     a {
       text-decoration: none;
     }
-
     /* Base for label styling */
     [type="checkbox"]:not(:checked),
     [type="checkbox"]:checked {
@@ -157,7 +160,6 @@
       opacity: 1;
       transform: scale(1);
     }
-
     td {
       border-bottom: 1px solid $main-text-color;
       padding: 15px 0;
@@ -188,11 +190,11 @@
       }
     }
   }
+
   .after-table {
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid $btn-edit;
-
     div {
       padding-right: 35px;
       a {
@@ -219,6 +221,7 @@
 
     }
   }
+
   .pages {
     margin: 90px auto 0;
     border: 2px solid $brand-color;
@@ -240,7 +243,7 @@
 }
 
 @media (max-width: $tabletWidth) {
-  .main-content {
+  .section-content {
     padding: 20px 25px 50px 25px;
     .button {
       font-size: 0.8rem;
@@ -253,21 +256,25 @@
 }
 
 @media (max-width: $mobileWidth) {
-  .main-content {
+  .section-content {
     width: 100%;
     padding: 0;
     margin: 20px;
+
     > div {
       padding-bottom: 5px;
     }
+
     .name-panel {
       display: none;
     }
+
     .name-system {
       h2 {
         font-size: 1.2rem;
       }
     }
+
     .info-dashboard {
       flex-wrap: wrap;
       font-size: 0.7rem;
@@ -304,12 +311,10 @@
         .button-open {
           margin-right: 15px;
           margin-bottom: 10px;
-
         }
         .button-add {
           margin-right: 15px;
           margin-bottom: 10px;
-
         }
         .button-delete {
           margin-right: 0;
@@ -319,6 +324,7 @@
         display: none;
       }
     }
+
     .table table {
       width: 100%;
       font-size: 0.6rem;
@@ -354,15 +360,16 @@
         td:nth-child(3) {
           display: none;
         }
-
         td:nth-child(6) {
           display: none;
         }
       }
     }
+
     .after-table {
       display: none;
     }
+
     .pages {
       margin: 10px auto 0;
       padding: 5px;

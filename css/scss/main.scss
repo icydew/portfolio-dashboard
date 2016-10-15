@@ -52,12 +52,13 @@ h6 {
   border-radius: 50px;
   height: 50px;
   width: 50px;
-
 }
 
 @import "base/config";
-@import "components/top";
+@import "components/header";
 @import "components/content";
-
+@import "components/section-menu";
+@import "components/section-content";
+@import "components/section-statistics";
 
 

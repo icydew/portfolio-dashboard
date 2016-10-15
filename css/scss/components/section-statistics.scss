@@ -1,4 +1,4 @@
-.nav-right {
+.section-statistics {
   width: 450px;
   flex-shrink: 0;
   background: #f0f0f0;
@@ -12,6 +12,7 @@
   > div {
     padding-bottom: 20px;
   }
+
   h5 {
     text-transform: uppercase;
     font-weight: 300;
@@ -30,10 +31,12 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
   .items {
     padding-bottom: 40px;
     border-bottom: 1px solid $center-text-color;
   }
+
   .stats {
     padding-top: 20px;
     > div {
@@ -50,20 +53,19 @@
       }
     }
   }
-  .show {
 
+  .show {
     .button-show {
       @extend .button;
       color: #ffffff;
       background: $btn-show;
-
     }
   }
+
   .team {
     display: flex;
     flex-direction: column;
     padding-top: 80px;
-
     .friends {
       display: flex;
       flex-direction: row;
@@ -90,7 +92,6 @@
       flex-direction: row;
       align-items: center;
       color: $brand-color;
-
       .button_circle {
         background: $brand-color;
         margin-right: 20px;
@@ -106,25 +107,30 @@
 }
 
 @media (max-width: $tabletWidth) {
-  .nav-right {
+  .section-statistics {
     padding: 25px;
+
     .inventorys {
       margin: auto;
       width: 50%;
     }
+
     .items {
       text-align: center;
     }
+
     .stats {
       width: 50%;
       margin: auto;
     }
+
     .show {
       margin: auto;
       .button-show {
         padding: 5px;
       }
     }
+
     .team {
       padding-top: 20px;
       flex-direction: row;
@@ -143,24 +149,28 @@
 }
 
 @media (max-width: $mobileWidth) {
-  .nav-right {
+  .section-statistics {
     padding: 20px 20px;
     font-weight: 600;
     font-size: 0.8rem;
+
     > div {
       padding-bottom: 10px;
     }
+
     h5 {
       font-weight: 300;
     }
+
     span {
+
       font-size: 1rem;
     }
-    .inventorys {
-    }
+
     .items {
       padding-bottom: 10px;
     }
+
     .stats {
       padding-top: 10px;
       > div {
@@ -176,12 +186,14 @@
         }
       }
     }
+
     .show {
       margin: 0 auto;
       .button-show {
         font-size: 0.55rem;
       }
     }
+
     .team {
       padding-top: 20px;
       .friends {
