@@ -1,5 +1,11 @@
-## Run build css & run lite-server
+## Devel
 
 ```
-npm run build
+npm run serve
+```
+
+## Build
+
+```
+npm run build:dev
 ```

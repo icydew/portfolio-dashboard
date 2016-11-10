@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node-sass ./css/scss/main.scss ./css/main.css -w ./css"
+    "build:dev": "rimraf ./dist && webpack",
+    "serve": "webpack-dev-server --inline --progress --port 9999"
   },
   "repository": {
     "type": "git",
@@ -16,7 +17,18 @@
     "url": "https://github.com/icydew/portfolio-dashboard/issues"
   },
   "homepage": "https://github.com/icydew/portfolio-dashboard#readme",
-  "dependencies": {
-    "node-sass": "^3.10.1"
+  "devDependencies": {
+    "css-loader": "^0.25.0",
+    "node-sass": "^3.10.1",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2",
+    "webpack-merge": "^0.15.0",
+    "html-loader": "^0.4.4",
+    "html-webpack-plugin": "^2.24.1",
+    "file-loader": "^0.9.0",
+    "url-loader": "^0.5.7",
+    "postcss-loader": "^1.1.1"
   }
 }
