@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IcyDew Portfolio — Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<!-- header start -->
+<header class="header">
+  <div class="menu full-section">
+    <a href="/">
+      <svg>
+        <use xlink:href="./img/sprite.svg#menu-icon"></use>
+      </svg>
+    </a>
+  </div>
+
+  <div class="navigation full-section">
+    <a href="">Find Parts</a>
+    <a href="">Queries</a>
+    <a href="">Find Companies</a>
+    <a href="">News</a>
+    <div class="status">
+      <a href="">
+        <svg>
+          <use xlink:href="./img/sprite.svg#graph-icon"></use>
+        </svg>
+      </a>
+      <a href="">
+        <svg>
+          <use xlink:href="./img/sprite.svg#messages-icon"></use>
+        </svg>
+      </a>
+      <a href="">
+        <svg>
+          <use xlink:href="./img/sprite.svg#settings-icon"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="profile">
+      <div><img class="avatar" src="52aaf1a41f718cbf4ab4b404671bc02c.jpg" alt=""></div>
+      <div><p>Dan Dancing</p></div>
+      <div>
+        <svg>
+          <use xlink:href="./img/sprite.svg#menu-down-icon"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  </header>
+<!-- header end -->
+
+<!-- content start -->
+<div class="content">
+  <div class="section-menu">
+    <div class="main-menu">
+      <a href="">
+        <p>MAIN</p>
+      </a>
+      <a href="">
+        <svg>
+          <use xlink:href="./img/sprite.svg#dashboard-icon"></use>
+        </svg>
+        <p>Dashboard</p>
+      </a>
+      <a href="">
+        <svg>
+          <use xlink:href="./img/sprite.svg#team-icon"></use>
+        </svg>
+        <p>Your Team</p>
+      </a>
+      <a href="">
+        <svg>
+          <use xlink:href="./img/sprite.svg#reports-icon"></use>
+        </svg>
+        <p>Reports</p>
+      </a>
+      <a href="">
+        <svg>
+          <use xlink:href="./img/sprite.svg#statistics-icon"></use>
+        </svg>
+        <p>Statistics</p>
+      </a>
+      <a href="">
+        <svg>
+          <use xlink:href="./img/sprite.svg#contacts-icon"></use>
+        </svg>
+        <p>Your Contacts</p>
+      </a>
+      <a href="">
+        <svg>
+          <use xlink:href="./img/sprite.svg#vendors-icon"></use>
+        </svg>
+        <p>Your Vendors</p>
+      </a>
+      <a href="">
+        <svg>
+          <use xlink:href="./img/sprite.svg#help-icon"></use>
+        </svg>
+        <p>Help</p>
+      </a>
+      <a href="">
+        <svg>
+          <use xlink:href="./img/sprite.svg#design-icon"></use>
+        </svg>
+        <p>Web design</p>
+      </a>
+    </div>
+    <div class="out">
+      <a href="">
+        <svg>
+          <use xlink:href="./img/sprite.svg#out-icon"></use>
+        </svg>
+        <p>Sign Out</p>
+      </a>
+    </div>
+  </div>
+
+  <div class="section-content">
+    <div class="name-panel">
+      <h5>Dashboard</h5>
+    </div>
+    <div class="name-system">
+      <h2>Danish Data System Ltd.</h2>
+    </div>
+    <div class="info-dashboard">
+      <div>
+        <svg>
+          <use xlink:href="./img/sprite.svg#location-icon"></use>
+        </svg>
+        <p>Danmark</p>
+      </div>
+      <div>
+        <svg>
+          <use xlink:href="./img/sprite.svg#people-icon"></use>
+        </svg>
+        <p>Member since</p>
+        <span id="data-dashboard">12/06/2014</span>
+      </div>
+      <div class="recommend">
+        <span class="-gold"><svg><use xlink:href="./img/sprite.svg#star-icon"></use></svg></span>
+        <span class="-gold"><svg><use xlink:href="./img/sprite.svg#star-icon"></use></svg></span>
+        <span class="-gold"><svg><use xlink:href="./img/sprite.svg#star-icon"></use></svg></span>
+        <span class="-gold"><svg><use xlink:href="./img/sprite.svg#star-icon"></use></svg></span>
+        <span><svg><use xlink:href="./img/sprite.svg#star-icon"></use></svg></span>
+        <p>(21 recommendations)</p>
+      </div>
+    </div>
+    <div class="tab">
+      <a href="">inventory</a>
+      <a href="" class="active">Queries</a>
+    </div>
+    <div class="btn">
+      <div class="buttons">
+        <div class="button-open"><span>312</span> open quaries</div>
+        <div class="button-add">Add new quaries</div>
+        <div class="button-delete">Delete all quaries</div>
+      </div>
+      <div class="search">
+        <a href="">search...</a>
+      </div>
+    </div>
+    <div class="table">
+      <table>
+        <tr class="title">
+          <td>
+            <input type="checkbox" id="all"/>
+            <label for="all"></label>
+          </td>
+          <td>Part number/manufacturer/model</td>
+          <td>Condition
+            <span><svg><use xlink:href="./img/sprite.svg#menu-down-icon"></use></svg></span>
+          </td>
+          <td>Qty
+            <span><svg><use xlink:href="./img/sprite.svg#menu-down-icon"></use></svg></span>
+          </td>
+          <td>Price
+            <span><svg><use xlink:href="./img/sprite.svg#menu-down-icon"></use></svg></span>
+          </td>
+          <td>Date
+            <span><svg><use xlink:href="./img/sprite.svg#menu-down-icon"></use></svg></span>
+          </td>
+          <td>Actions</td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" id="1"/>
+            <label for="1"></label>
+          </td>
+          <td><span>Sg5000xcgbvjhkd20 &bull; Apple</span><br>
+            imac 21.5" 2/9ghz/8gb/itb wired
+          </td>
+          <td>New
+          </td>
+          <td>1200
+          </td>
+          <td>$2000
+          </td>
+          <td>16/05/04
+          </td>
+          <td>
+            <a href="">
+              <svg>
+                <use xlink:href="./img/sprite.svg#edit-icon"></use>
+              </svg>
+            </a>
+            <a href="">
+              <svg class="block-tr">
+                <use xlink:href="./img/sprite.svg#delete-icon"></use>
+              </svg>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" id="2"/>
+            <label for="2"></label>
+          </td>
+          <td><span>Sg5000xcgbvjhkd20 &bull; Apple</span><br>
+            imac 21.5" 2/9ghz/8gb/itb wired
+          </td>
+          <td>New
+          </td>
+          <td>1200
+          </td>
+          <td>$2000
+          </td>
+          <td>16/05/04
+          </td>
+          <td>
+              <a href="">
+                <svg>
+                  <use xlink:href="./img/sprite.svg#edit-icon"></use>
+                </svg>
+              </a>
+            <a href="">
+              <svg class="block-tr">
+                <use xlink:href="./img/sprite.svg#delete-icon"></use>
+              </svg>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" id="3" checked="checked"/>
+            <label for="3"></label>
+          </td>
+          <td><span>Sg5000xcgbvjhkd20 &bull; Apple</span><br>
+            imac 21.5" 2/9ghz/8gb/itb wired
+          </td>
+          <td>New
+          </td>
+          <td>1200
+          </td>
+          <td>$2000
+          </td>
+          <td>16/05/04
+          </td>
+          <td>
+            <a href="">
+              <svg>
+                <use xlink:href="./img/sprite.svg#edit-icon"></use>
+              </svg>
+            </a>
+            <a href="">
+              <svg class="block-tr">
+                <use xlink:href="./img/sprite.svg#delete-icon"></use>
+              </svg>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" id="4"/>
+            <label for="4"></label>
+          </td>
+          <td><span>Sg5000xcgbvjhkd20 &bull; Apple</span><br>
+            imac 21.5" 2/9ghz/8gb/itb wired
+          </td>
+          <td>New
+          </td>
+          <td>1200
+          </td>
+          <td>$2000
+          </td>
+          <td>16/05/04
+          </td>
+          <td>
+            <a href="">
+              <svg>
+                <use xlink:href="./img/sprite.svg#edit-icon"></use>
+              </svg>
+            </a>
+            <a href="">
+              <svg class="block-tr">
+                <use xlink:href="./img/sprite.svg#delete-icon"></use>
+              </svg>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" id="5"/>
+            <label for="5"></label>
+          </td>
+          <td><span>Sg5000xcgbvjhkd20 &bull; Apple</span><br>
+            imac 21.5" 2/9ghz/8gb/itb wired
+          </td>
+          <td>New
+          </td>
+          <td>1200
+          </td>
+          <td>$2000
+          </td>
+          <td>16/05/04
+          </td>
+          <td>
+            <a href="">
+              <svg>
+                <use xlink:href="./img/sprite.svg#edit-icon"></use>
+              </svg>
+            </a>
+            <a href="">
+              <svg class="block-tr">
+                <use xlink:href="./img/sprite.svg#delete-icon"></use>
+              </svg>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" id="6"/>
+            <label for="6"></label>
+          </td>
+          <td><span>Sg5000xcgbvjhkd20 &bull; Apple</span><br>
+            imac 21.5" 2/9ghz/8gb/itb wired
+          </td>
+          <td>New
+          </td>
+          <td>1200
+          </td>
+          <td>$2000
+          </td>
+          <td>16/05/04
+          </td>
+          <td>
+            <a href="">
+              <svg>
+                <use xlink:href="./img/sprite.svg#edit-icon"></use>
+              </svg>
+            </a>
+            <a href="">
+              <svg class="block-tr">
+                <use xlink:href="./img/sprite.svg#delete-icon"></use>
+              </svg>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" id="7"/>
+            <label for="7"></label>
+          </td>
+          <td><span>Sg5000xcgbvjhkd20 &bull; Apple</span><br>
+            imac 21.5" 2/9ghz/8gb/itb wired
+          </td>
+          <td>New
+          </td>
+          <td>1200
+          </td>
+          <td>$2000
+          </td>
+          <td>16/05/04
+          </td>
+          <td>
+            <a href="">
+              <svg>
+                <use xlink:href="./img/sprite.svg#edit-icon"></use>
+              </svg>
+            </a>
+            <a href="">
+              <svg class="block-tr">
+                <use xlink:href="./img/sprite.svg#delete-icon"></use>
+              </svg>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" id="8"/>
+            <label for="8"></label>
+          </td>
+          <td><span>Sg5000xcgbvjhkd20 &bull; Apple</span><br>
+            imac 21.5" 2/9ghz/8gb/itb wired
+          </td>
+          <td>New
+          </td>
+          <td>1200
+          </td>
+          <td>$2000
+          </td>
+          <td>16/05/04
+          </td>
+          <td>
+            <a href="">
+              <svg>
+                <use xlink:href="./img/sprite.svg#edit-icon"></use>
+              </svg>
+            </a>
+            <a href="">
+              <svg class="block-tr">
+                <use xlink:href="./img/sprite.svg#delete-icon"></use>
+              </svg>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" id="9"/>
+            <label for="9"></label>
+          </td>
+          <td><span>Sg5000xcgbvjhkd20 &bull; Apple</span><br>
+            imac 21.5" 2/9ghz/8gb/itb wired
+          </td>
+          <td>New
+          </td>
+          <td>1200
+          </td>
+          <td>$2000
+          </td>
+          <td>16/05/04
+          </td>
+          <td>
+            <a href="">
+              <svg>
+                <use xlink:href="./img/sprite.svg#edit-icon"></use>
+              </svg>
+            </a>
+            <a href="">
+              <svg class="block-tr">
+                <use xlink:href="./img/sprite.svg#delete-icon"></use>
+              </svg>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" id="10"/>
+            <label for="10"></label>
+          </td>
+          <td><span>Sg5000xcgbvjhkd20 &bull; Apple</span><br>
+            imac 21.5" 2/9ghz/8gb/itb wired
+          </td>
+          <td>New
+          </td>
+          <td>1200
+          </td>
+          <td>$2000
+          </td>
+          <td>16/05/04
+          </td>
+          <td>
+            <a href="">
+              <svg>
+                <use xlink:href="./img/sprite.svg#edit-icon"></use>
+              </svg>
+            </a>
+            <a href="">
+              <svg class="block-tr">
+                <use xlink:href="./img/sprite.svg#delete-icon"></use>
+              </svg>
+            </a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="after-table">
+      <div>
+        <a href="">
+          <svg>
+            <use xlink:href="./img/sprite.svg#select-icon"></use>
+          </svg>
+          <span>select all</span>
+        </a>
+      </div>
+      <div>
+        <a href="">
+          <svg>
+            <use xlink:href="./img/sprite.svg#unselect-icon"></use>
+          </svg>
+          <span>unselect all</span>
+        </a>
+      </div>
+      <div>
+        <a href="">
+          <div class="button-edit">Edit selected items</div>
+        </a>
+      </div>
+      <div>
+        <a href="">
+          <div class="button-delete">Delete selected items</div>
+        </a>
+      </div>
+    </div>
+    <div class="pages">
+      <a href=""><span>&larr;</span></a>
+      <a href="">1</a>
+      <a href=""><span>2</span></a>
+      <a href="">3</a>
+      <a href=""><span>&rarr;</span></a>
+    </div>
+
+  </div>
+
+  <div class="section-statistics">
+    <div>
+      <h5>Statistics</h5>
+    </div>
+    <div class="inventorys">
+      <div>
+        <p><span>213</span></p>
+        <p>Inventory</p>
+      </div>
+      <div>
+        <p><span>112</span></p>
+        <p>Total Hits</p>
+      </div>
+    </div>
+    <div class="items">
+      <div>
+        <p><span>9,340,050</span></p>
+        <p>Total number of items to sell</p>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="line">
+        <div class="label">Total companies</div>
+        <div class="value">6,540</div>
+      </div>
+      <div class="line">
+        <div class="label">New companies</div>
+        <div class="value">39</div>
+      </div>
+      <div class="line">
+        <div class="label">Total numbers</div>
+        <div class="value">12,670</div>
+      </div>
+      <div class="line">
+        <div class="label">Total quaries</div>
+        <div class="value">2,351</div>
+      </div>
+    </div>
+    <div class="show">
+      <div class="button-show">Show full statistics</div>
+    </div>
+    <div class="team">
+      <h5>Your team</h5>
+      <div class="friends">
+        <div><img class="avatar" src="52aaf1a41f718cbf4ab4b404671bc02c.jpg" alt=""></div>
+        <div>
+          <p>Greg Dlubacz</p>
+          <p class="post">Account Manager</p>
+        </div>
+      </div>
+      <div class="friends">
+        <div><img class="avatar" src="52aaf1a41f718cbf4ab4b404671bc02c.jpg" alt=""></div>
+        <div>
+          <p>Greg Dlubacz</p>
+          <p class="post">Account Manager</p>
+        </div>
+      </div>
+      <div class="friends">
+        <div><img class="avatar" src="52aaf1a41f718cbf4ab4b404671bc02c.jpg" alt=""></div>
+        <div>
+          <p>Greg Dlubacz</p>
+          <p class="post">Account Manager</p>
+        </div>
+      </div>
+      <div class="friends">
+        <div><img class="avatar" src="52aaf1a41f718cbf4ab4b404671bc02c.jpg" alt=""></div>
+        <div>
+          <p>Greg Dlubacz</p>
+          <p class="post">Account Manager</p>
+        </div>
+      </div>
+      <div class="new-team">
+        <div class="button_circle">
+          <svg>
+            <use xlink:href="./img/sprite.svg#plus-icon"></use>
+          </svg>
+        </div>
+        <div>Add new team member</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- content end -->
+
+<script type="text/javascript" src="app.js"></script></body>
+</html>
